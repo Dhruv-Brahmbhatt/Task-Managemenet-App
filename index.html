@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="Task Management Project Session.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="bar">
+
+            <div class="logo">
+                <h1 class="brand"> <i class="fa-solid fa-list-check"></i>TaskFlow</h1>
+            </div>
+
+            <div class="options">
+    <div class="fam">
+        <span class="filters-title">Filters:</span>
+
+        <span class="filters-label">Priority:</span>
+        <div class="cir lightpink" data-color="lightpink"></div>
+        <div class="cir lightblue" data-color="lightblue"></div>
+        <div class="cir lightgreen" data-color="lightgreen"></div>
+        <div class="cir yellow" data-color="yellow"></div>
+
+        <button class="filter-btn sort-priority">Sort by Priority</button>
+        <button class="filter-btn sort-due">Sort by Due</button>
+        <button class="filter-btn clear-filters">Clear</button>
+    </div>
+</div>
+
+       
+            <div class="butt">
+                <button class="b Add"><i class="fa-solid fa-plus"></i>Add Task</button>
+                <button class="b Delete"> <i class="fa-solid fa-trash-can-arrow-up"></i>Delete</button>
+            </div>
+
+        </div>
+    </nav>
+    <section class="bbb">
+        <div class="container">
+              
+
+          
+        <!-- we have added this part to js of ticket-->
+
+
+
+        </div>
+        <div class="modal-cont">
+            <div class="modal-header">
+               
+            </div>
+            <div class="textdate">
+            <textarea class="textArea-cont editable" placeholder="Enter your task description..."></textarea>
+               
+            <label>Deadline:</label>
+            <input type="datetime-local" id="deadline" class="editable">
+            </div>
+            <div class="priority-colors-container">
+                <span class="priority-label">Select Priority:</span>
+                <div class="priority-grid">
+                    <div class="lightpink priority-color active" title="High Priority">
+                        <span>L</span>
+                    </div>
+                    <div class="lightgreen priority-color" title="Medium Priority">
+                        <span>H</span>
+                    </div>
+                    <div class="lightblue priority-color" title="Low Priority">
+                        <span>M</span>
+                    </div>
+                    <div class="yellow priority-color" title="Critical">
+                        <span>C</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <small>Press <kbd>Shift+Enter</kbd>to add a Task!</small>
+                </div>
+            </div>
+    </section>
+
+    <script src="Task Management App (Self).js">
+
+    </script>
+</body>
+
+</html>
